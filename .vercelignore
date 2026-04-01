@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.pem
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentation (keep in repo for reference, don't deploy)
+00_START_HERE.md
+PROJECT_SUMMARY.md
+QUICK_REFERENCE.md
+QUICK_START.md
+FIREBASE_SETUP.md
+DEPLOYMENT.md
+
+# Keep README for reference
+README.md

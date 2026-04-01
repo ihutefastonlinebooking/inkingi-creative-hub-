@@ -1,9 +1,4 @@
 {
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
   "env": {
     "NEXT_PUBLIC_FIREBASE_API_KEY": "@NEXT_PUBLIC_FIREBASE_API_KEY",
     "NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN": "@NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN",
@@ -13,6 +8,24 @@
     "NEXT_PUBLIC_FIREBASE_APP_ID": "@NEXT_PUBLIC_FIREBASE_APP_ID",
     "FIREBASE_ADMIN_KEY": "@FIREBASE_ADMIN_KEY"
   },
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "nodeVersion": "18.x",
+  "outputDirectory": ".next",
   "public": false,
-  "regions": ["sfo1"]
+  "regions": ["iad1"],
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/readme",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }
+

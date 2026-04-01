@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /gallery
+Allow: /events
+Allow: /contact
+Allow: /donate
+Allow: /join
+Disallow: /admin
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.vercelignore
+Disallow: /node_modules
+Disallow: /.git
+
+Sitemap: /sitemap.xml
