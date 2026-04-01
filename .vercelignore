@@ -3,15 +3,16 @@ node_modules/
 .pnp
 .pnp.js
 
-# Build outputs
-.next/
-out/
-build/
-dist/
+# Documentation - don't deploy
+*.md
+!node_modules/**/*.md
 
-# Testing
+# Build outputs
 coverage/
 .nyc_output/
+
+# Testing
+.jest/
 
 # Misc
 *.pem
@@ -22,9 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Env files
+# Env files (keep .env.local.example for reference)
 .env
-.env.local
 .env.*.local
 
 # IDE
@@ -38,13 +38,3 @@ lerna-debug.log*
 .git/
 .gitignore
 
-# Documentation (keep in repo for reference, don't deploy)
-00_START_HERE.md
-PROJECT_SUMMARY.md
-QUICK_REFERENCE.md
-QUICK_START.md
-FIREBASE_SETUP.md
-DEPLOYMENT.md
-
-# Keep README for reference
-README.md
